@@ -1,0 +1,20 @@
+class X {
+
+    @Test
+    @Order(<spot>1</spot>)
+    void nullValues() {
+        // test code
+    }
+
+    @Test
+    @Order(1)
+    void emptyValues() {
+        // test code
+    }
+
+    @Test
+    @Order(2)
+    void validValues() {
+        // test code
+    }
+}

@@ -1,0 +1,24 @@
+<idea-plugin>
+
+    <id>com.vlaptev.test-order-repairman</id>
+    <name>Test Order Repairman</name>
+
+    <vendor email="vlaslaptev@gmail.com">vlaptev</vendor>
+
+    <description><![CDATA[
+    Adds reordering of test methods annotated with @Order in JUnit.
+    It will automatically detect changes made to the @Order annotation in your JUnit test classes.
+    If a new test method is added or an existing one is updated,
+    JUnit Order Shift will adjust the order values of other test methods accordingly
+  ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>com.vlaptev.testorderrepairman.TestOrderRepairman</className>
+            <category>Intentions</category>
+        </intentionAction>
+    </extensions>
+</idea-plugin>
