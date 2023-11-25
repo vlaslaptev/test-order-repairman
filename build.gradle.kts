@@ -15,6 +15,12 @@ dependencies {
 }
 
 intellij {
-    version.set("2022.2")
+    version.set("2023.2.5")
     plugins.set(listOf("com.intellij.java"))
+}
+
+tasks {
+    patchPluginXml {
+        sinceBuild = "213.7172.25"
+    }
 }
