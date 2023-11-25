@@ -55,13 +55,21 @@ public class TestOrderRepairman extends PsiElementBaseIntentionAction implements
     @Override
     public boolean isAvailable(@NotNull Project project, Editor editor, @NotNull PsiElement element) {
         if (element instanceof PsiJavaToken token) {
-            if (token.getTokenType() != JavaTokenType.INTEGER_LITERAL) {
+            if (token.getTokenType() == JavaTokenType.INTEGER_LITERAL) {
+                PsiElement parent = token.getParent().getParent().getParent().getParent();
+                if (parent instanceof PsiAnnotation annotation) {
+                    String qualifiedName = annotation.getQualifiedName();
+                    return "org.junit.jupiter.api.Order".equals(qualifiedName);
+                }
                 return false;
             }
-            PsiElement parent = token.getParent().getParent().getParent().getParent();
-            if (parent instanceof PsiAnnotation annotation) {
-                String qualifiedName = annotation.getQualifiedName();
-                return "org.junit.jupiter.api.Order".equals(qualifiedName);
+            if (token.getTokenType() ==  JavaTokenType.RPARENTH) {
+                PsiElement parent = token.getParent().getParent();
+                if (parent instanceof PsiAnnotation annotation) {
+                    String qualifiedName = annotation.getQualifiedName();
+                    return "org.junit.jupiter.api.Order".equals(qualifiedName);
+                }
+                return false;
             }
             return false;
         }
