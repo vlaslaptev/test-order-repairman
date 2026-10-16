@@ -6,10 +6,26 @@
     <vendor email="vlaslaptev@gmail.com">vlaptev</vendor>
 
     <description><![CDATA[
-    Adds reordering of test methods annotated with @Order in JUnit.
-    It will automatically detect changes made to the @Order annotation in your JUnit test classes.
-    If a new test method is added or an existing one is updated,
-    JUnit Order Shift will adjust the order values of other test methods accordingly
+    <p>Renumber JUnit @Order values in source order with Alt+Enter.</p>
+    <p>Place the caret inside a JUnit Jupiter @Order annotation on a Java test method
+    and choose <b>Renumber JUnit @Order values in this class</b>.</p>
+    <ul>
+      <li>Assigns consecutive values starting at 1 to already annotated test methods
+      declared directly in the selected class.</li>
+      <li>Keeps neighboring classes, nested classes, class annotations, extension fields,
+      and helper methods unchanged.</li>
+      <li>Supports constants, expressions, negative values, parameterized tests,
+      repeated tests, test factories, templates, and composed test annotations.</li>
+      <li>Preserves annotation names, imports, and values that already match their position.</li>
+    </ul>
+    <p>This is a manually invoked intention. It does not watch edits, move methods,
+    add missing @Order annotations, or configure JUnit's orderer.
+    To run methods by these values, configure @TestMethodOrder(MethodOrderer.OrderAnnotation.class).
+    The action is unavailable if the numbering already matches or an annotated test method
+    has an invalid or unresolved order value. Expressions whose value must change are
+    replaced with integer literals; shared constants are not modified.</p>
+    <p><a href="https://github.com/vlaslaptev/test-order-repairman">Documentation</a>
+    | <a href="https://github.com/vlaslaptev/test-order-repairman/issues">Report an issue</a></p>
   ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
@@ -18,7 +34,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <intentionAction>
             <className>com.vlaptev.testorderrepairman.TestOrderRepairman</className>
-            <category>Intentions</category>
+            <category>JUnit</category>
         </intentionAction>
     </extensions>
 </idea-plugin>

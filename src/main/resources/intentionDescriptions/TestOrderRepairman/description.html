@@ -1,5 +1,13 @@
 <html>
 <body>
-This intention reorders of test methods annotated with @Order in JUnit. <br>
+Renumbers JUnit Jupiter <code>@Order</code> values from 1 in the order test methods
+appear in the current Java class. Only already annotated test methods declared directly
+in that class are changed. Nested classes, extension fields, and helper methods are excluded.
+<p>Invoke with Alt+Enter inside a test method's <code>@Order</code> annotation.
+Annotation names and imports are preserved. Constant expressions are replaced with
+integer literals only when their values must change. The intention is unavailable
+if all values already match or an order value cannot be evaluated.</p>
+<p>The intention does not configure JUnit's orderer. Use
+<code>@TestMethodOrder(MethodOrderer.OrderAnnotation.class)</code> to run tests by these values.</p>
 </body>
 </html>

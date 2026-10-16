@@ -1,19 +1,21 @@
+import org.junit.jupiter.api.Test;
+
 class X {
 
     @Test
-    @Order(1)
+    @org.junit.jupiter.api.Order(1)
     void nullValues() {
         // test code
     }
 
     @Test
-    @Order(2)
+    @org.junit.jupiter.api.Order(2)
     void emptyValues() {
         // test code
     }
 
     @Test
-    @Order(3)
+    @org.junit.jupiter.api.Order(3)
     void validValues() {
         // test code
     }
