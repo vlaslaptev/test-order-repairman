@@ -1,7 +1,7 @@
 # Marketplace kit
 
-Prepared for the next Test Order Repairman release. No new plugin archive or
-Marketplace update has been published as part of this media work.
+Prepared for Test Order Repairman 1.2. Publication is pending Marketplace
+submission and approval.
 
 ## Review
 
@@ -60,8 +60,7 @@ Use the separate Getting Started field for the guide. Keep the repository copy a
 
 The media describes the corrected implementation in the repository. Publish it
 together with that implementation, rather than describing the existing 1.1 artifact
-as having the new behavior. Assign the next release version before uploading a new
-archive. The declared range stays 2021.3.3–2023.2.x; these assets do not claim support
+as having the new behavior. The prepared archive version is 1.2. The declared range stays 2021.3.3–2023.2.x; these assets do not claim support
 for newer IDEs.
 
 ## Reproduce the exports

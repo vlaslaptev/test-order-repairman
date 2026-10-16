@@ -76,7 +76,7 @@ annotations. This prevents a partially renumbered class. Wait for IDE indexing t
 
 ## Compatibility
 
-| Area | Declared support for the prepared update |
+| Area | Declared support for version 1.2 |
 | --- | --- |
 | IDE | IntelliJ IDEA 2021.3.3–2023.2.x with Java support |
 | Platform build | `213.7172.25` through `232.*` |
@@ -90,9 +90,8 @@ implemented. Newer IDE compatibility is not claimed by this update.
 
 ## Release and media
 
-The fixes, logo, and media in this branch are prepared for the next release.
-The Marketplace listing currently distributes version 1.1; these materials do not
-represent a newly published release. See the [changelog](CHANGELOG.md).
+Version 1.2 includes the scoped renumbering fixes, the annotation logo, and the
+updated media. Publication is pending Marketplace submission and approval. See the [changelog](CHANGELOG.md).
 
 The gallery consists of original informational illustrations derived from repository
 fixtures, not screenshots of a running plugin. Editable sources, upload order,

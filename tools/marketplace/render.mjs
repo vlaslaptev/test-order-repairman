@@ -252,7 +252,7 @@ const preview = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name
   '.copy{background:white;border:1px solid #dce3ef;border-radius:16px;padding:32px;margin-top:48px}' +
   'a{color:#3574f0}code{font-family:Menlo,monospace;font-size:.9em}li{margin:.5em 0}' +
   '.note{color:#58657b;max-width:900px}</style><main><h1>Test Order Repairman</h1>' +
-  '<p class="note">Prepared Marketplace assets. The gallery contains original informational illustrations based on source fixtures, not captures of a running plugin. No new release has been published.</p>' +
+  '<p class="note">Marketplace assets for version 1.2. The gallery contains original informational illustrations based on source fixtures, not captures of a running plugin. Publication is pending Marketplace submission and approval.</p>' +
   '<img src="media/brand-preview.png" alt="Light and dark logo variants">' +
   galleryHtml + '<section class="copy"><h2>Marketplace description</h2>' + description + "</section></main></html>\n";
 await fs.writeFile(path.join(root, "docs/marketplace/preview.html"), preview);

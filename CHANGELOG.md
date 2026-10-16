@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.2 — 2026-10-16
 
 - Limit renumbering to test methods declared directly in the selected class.
 - Preserve annotation names, imports, and expressions that already match their position.
