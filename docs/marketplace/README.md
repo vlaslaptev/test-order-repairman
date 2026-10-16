@@ -1,7 +1,7 @@
 # Marketplace kit
 
-Prepared for Test Order Repairman 1.2. Publication is pending Marketplace
-submission and approval.
+Test Order Repairman 1.2 has been submitted to Marketplace and is awaiting
+approval. The listing copy and gallery identify the behavior as version 1.2.
 
 ## Review
 
@@ -58,9 +58,12 @@ Use the Marketplace editor's media section for the four PNGs in the order above.
 Use the separate Getting Started field for the guide. Keep the repository copy and
 `plugin.xml` synchronized so a later update does not restore old text.
 
-The media describes the corrected implementation in the repository. Publish it
-together with that implementation, rather than describing the existing 1.1 artifact
-as having the new behavior. The prepared archive version is 1.2. The declared range stays 2021.3.3–2023.2.x; these assets do not claim support
+The live description, Getting Started guide, and four-image gallery were updated
+through Chrome on 2026-10-16. Their version notices identify the behavior as 1.2
+while the release awaits moderation. The submission uses the stable channel with
+automatic public release after approval. The source copy in `plugin.xml` remains
+the basis for future updates; `listing.json` records the live version-notice prefixes
+and Marketplace image IDs. The declared range stays 2021.3.3–2023.2.x; these assets do not claim support
 for newer IDEs.
 
 ## Reproduce the exports

@@ -91,7 +91,7 @@ implemented. Newer IDE compatibility is not claimed by this update.
 ## Release and media
 
 Version 1.2 includes the scoped renumbering fixes, the annotation logo, and the
-updated media. Publication is pending Marketplace submission and approval. See the [changelog](CHANGELOG.md).
+updated media. Version 1.2 has been submitted to Marketplace and is awaiting approval. See the [changelog](CHANGELOG.md).
 
 The gallery consists of original informational illustrations derived from repository
 fixtures, not screenshots of a running plugin. Editable sources, upload order,

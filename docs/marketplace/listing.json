@@ -2,7 +2,7 @@
   "name": "Test Order Repairman",
   "pluginId": "com.vlaptev.test-order-repairman",
   "marketplaceId": 23151,
-  "status": "Version 1.2 built; Marketplace submission pending",
+  "status": "Version 1.2 submitted to Marketplace; awaiting moderation",
   "shortDescription": "Renumber JUnit @Order values with Alt+Enter.",
   "tags": [
     "Testing",
@@ -24,7 +24,8 @@
       "sourceFixtures": [
         "permuted.java",
         "permuted.after.java"
-      ]
+      ],
+      "marketplaceImageId": "bef2151a-1edb-41fb-a241-6ccb230eb939"
     },
     {
       "file": "media/02-one-class-at-a-time.png",
@@ -32,13 +33,15 @@
       "sourceFixtures": [
         "classScope.java",
         "classScope.after.java"
-      ]
+      ],
+      "marketplaceImageId": "7e5d71dc-640d-49ee-95d2-b8949e04b72b"
     },
     {
       "file": "media/03-alt-enter-workflow.png",
       "alt": "Illustrated guide: place the caret in @Order, press Alt+Enter, choose the renumber intention.",
       "sourceFixtures": [],
-      "source": "Action wording in TestOrderRepairman.java"
+      "source": "Action wording in TestOrderRepairman.java",
+      "marketplaceImageId": "26e38a45-c0af-4176-a355-d09f30632c1e"
     },
     {
       "file": "media/04-constants-and-imports.png",
@@ -46,7 +49,8 @@
       "sourceFixtures": [
         "expressions.java",
         "expressions.after.java"
-      ]
+      ],
+      "marketplaceImageId": "742b1e63-83a0-4d8b-aacf-d02cd86f620c"
     }
   ],
   "mediaType": "Original informational illustrations, not runtime IDE screenshots",
@@ -67,5 +71,22 @@
     "untilBuild": "232.*",
     "java": 11
   },
-  "version": "1.2"
+  "version": "1.2",
+  "publication": {
+    "version": "1.2",
+    "status": "awaiting-moderation",
+    "channel": "stable",
+    "publicReleaseAfterApproval": true,
+    "submittedOn": "2026-10-16",
+    "url": "https://plugins.jetbrains.com/plugin/23151-test-order-repairman/versions",
+    "liveDescriptionPrefix": "<p>This description and gallery cover <b>version 1.2</b>. Check <a href=\"https://plugins.jetbrains.com/plugin/23151-test-order-repairman/versions\">Versions</a> for available downloads.</p>",
+    "liveGettingStartedPrefix": "<p>This guide covers <b>version 1.2</b>. Check the Versions tab for available downloads.</p>",
+    "updateId": 1196137,
+    "submissionUrl": "https://plugins.jetbrains.com/plugin/23151-test-order-repairman/edit/versions/stable/1196137",
+    "listingUpdatedOn": "2026-10-16",
+    "descriptionPublished": true,
+    "gettingStartedPublished": true,
+    "galleryPublished": true,
+    "publicListingLogoUpdated": true
+  }
 }
