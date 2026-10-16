@@ -1,0 +1,10 @@
+{
+  "selectedOption": 3,
+  "name": "Annotation symbol above the arrow",
+  "light": "03-at-arrow.svg",
+  "dark": "03-at-arrow_dark.svg",
+  "preview": "comparison.png",
+  "status": "Applied to plugin resources, gallery, logo exports, and Marketplace kit",
+  "canonicalLight": "../../../src/main/resources/META-INF/pluginIcon.svg",
+  "canonicalDark": "../../../src/main/resources/META-INF/pluginIcon_dark.svg"
+}

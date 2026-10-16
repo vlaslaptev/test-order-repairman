@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Test Order Repairman · Marketplace review</title><style>body{margin:0;background:#f5f7fb;color:#17233b;font:17px/1.65 Arial,sans-serif}main{max-width:1200px;margin:64px auto;padding:0 24px}h1{font-size:42px;letter-spacing:-1.2px}h2{font-size:25px;margin-top:44px}img{display:block;width:100%;height:auto;border-radius:12px}.copy{background:white;border:1px solid #dce3ef;border-radius:16px;padding:32px;margin-top:48px}a{color:#3574f0}code{font-family:Menlo,monospace;font-size:.9em}li{margin:.5em 0}.note{color:#58657b;max-width:900px}</style><main><h1>Test Order Repairman</h1><p class="note">Prepared Marketplace assets. The gallery contains original informational illustrations based on source fixtures, not captures of a running plugin. No new release has been published.</p><img src="media/brand-preview.png" alt="Light and dark logo variants"><section><h2>Renumber in source order</h2><img src="media/01-renumber-in-source-order.png" alt="Renumber in source order"></section>
+<section><h2>One class at a time</h2><img src="media/02-one-class-at-a-time.png" alt="One class at a time"></section>
+<section><h2>The Alt+Enter workflow</h2><img src="media/03-alt-enter-workflow.png" alt="The Alt+Enter workflow"></section>
+<section><h2>Constants, expressions, and imports</h2><img src="media/04-constants-and-imports.png" alt="Constants, expressions, and imports"></section><section class="copy"><h2>Marketplace description</h2><p><b>Renumber JUnit @Order values with Alt+Enter.</b></p>
+<p>Added a test, moved a method, or ended up with duplicate numbers?
+Test Order Repairman assigns consecutive <code>@Order</code> values in the order
+your test methods appear in the Java source file.</p>
+
+<h3>From 3, 1, 2 to 1, 2, 3</h3>
+<ul>
+  <li><b>Work on one class.</b> Renumber already annotated test methods declared
+  directly in the selected class, starting at 1.</li>
+  <li><b>Keep your code in place.</b> Method locations, annotation names, and imports
+  stay as they are.</li>
+  <li><b>Handle more than literals.</b> Resolve integer constants, constant expressions,
+  and negative values before making changes.</li>
+  <li><b>Keep other scopes intact.</b> Neighboring classes, nested classes, extension
+  fields, and helper methods are excluded.</li>
+</ul>
+
+<h3>How to use it</h3>
+<ol>
+  <li>Place the caret inside a test method's <code>@Order</code> annotation.</li>
+  <li>Press <b>Alt+Enter</b>.</li>
+  <li>Choose <b>Renumber JUnit @Order values in this class</b>.</li>
+</ol>
+<p>Works with Java and JUnit Jupiter: regular, repeated, and parameterized tests,
+test factories, templates, and composed test annotations.</p>
+
+<h3>Running tests in this order</h3>
+<p>Configure <code>@TestMethodOrder(MethodOrderer.OrderAnnotation.class)</code>
+on your test class, or the equivalent JUnit default orderer. The intention updates
+annotation values; JUnit controls execution order.</p>
+
+<p>Invoke the action when you need it. Values that already match their position keep
+their original expression. A changed expression becomes an integer literal; shared
+constant declarations are preserved. The action is unavailable when numbering already
+matches or a participating order value is invalid or unresolved. Methods without
+<code>@Order</code> are left unchanged.</p>
+
+<p><a href="https://github.com/vlaslaptev/test-order-repairman#usage">Getting started</a>
+&nbsp;|&nbsp; <a href="https://github.com/vlaslaptev/test-order-repairman/issues">Report an issue</a>
+&nbsp;|&nbsp; <a href="https://github.com/vlaslaptev/test-order-repairman">Source code</a></p>
+</section></main></html>

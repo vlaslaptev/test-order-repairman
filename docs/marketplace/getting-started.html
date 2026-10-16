@@ -1,0 +1,55 @@
+<h2>Renumber your first test class</h2>
+<ol>
+  <li>Install <b>Test Order Repairman</b> from Settings / Preferences &gt; Plugins
+  &gt; Marketplace in a compatible IntelliJ-based IDE.</li>
+  <li>Open a Java class with JUnit Jupiter test methods annotated with
+  <code>org.junit.jupiter.api.Order</code>.</li>
+  <li>Place the caret anywhere inside one of those <code>@Order</code> annotations.</li>
+  <li>Press <b>Alt+Enter</b> and select
+  <b>Renumber JUnit @Order values in this class</b>.</li>
+</ol>
+
+<h3>A complete example</h3>
+<pre><code>import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+class ExampleTest {
+    @Test @Order(3)
+    void first() {}
+
+    @Test @Order(1)
+    void second() {}
+
+    @Test @Order(2)
+    void third() {}
+}</code></pre>
+<p>After the intention, these methods have values <code>1</code>, <code>2</code>,
+and <code>3</code> in source order. The methods themselves are not moved.</p>
+
+<h3>What changes</h3>
+<p>Only existing <code>@Order</code> values on test methods declared directly in the
+selected class are renumbered. Invoke inside a nested class to process that class
+separately. Extension fields, class annotations, helper methods, inherited methods,
+and methods without <code>@Order</code> are excluded.</p>
+<p>Resolved constants and constant expressions are supported. Expressions whose
+values must change become integer literals; their shared declarations are not edited.
+An expression that already equals its method's position is preserved.</p>
+
+<h3>If the action does not appear</h3>
+<ul>
+  <li>Check that the file is writable Java source and uses JUnit Jupiter, not JUnit 4.</li>
+  <li>Place the caret inside a test method's <code>@Order</code>, rather than on a
+  class, field, or helper method.</li>
+  <li>Wait for the IDE to finish indexing so annotation and constant references can resolve.</li>
+  <li>Check all participating <code>@Order</code> values in the class. Invalid,
+  unresolved, incomplete, or duplicate annotations prevent the whole operation.</li>
+  <li>If the numbering already matches <code>1, 2, 3, …</code> in source order,
+  there is nothing to renumber.</li>
+</ul>
+<p>The declared IDE range for the prepared update remains IntelliJ IDEA
+2021.3.3–2023.2.x with Java support. Newer IDE compatibility is not claimed.</p>
+<p><a href="https://github.com/vlaslaptev/test-order-repairman/issues">Report a problem</a>
+with your IDE version and a minimal example.</p>

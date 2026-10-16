@@ -1,0 +1,70 @@
+{
+  "name": "Test Order Repairman",
+  "pluginId": "com.vlaptev.test-order-repairman",
+  "marketplaceId": 23151,
+  "status": "Prepared assets for the next release; not published",
+  "shortDescription": "Renumber JUnit @Order values with Alt+Enter.",
+  "tags": [
+    "Testing",
+    "Formatting"
+  ],
+  "description": "description.html",
+  "gettingStarted": "getting-started.html",
+  "changeNotes": "change-notes.html",
+  "resources": {
+    "sourceCode": "https://github.com/vlaslaptev/test-order-repairman",
+    "documentation": "https://github.com/vlaslaptev/test-order-repairman#usage",
+    "bugtracker": "https://github.com/vlaslaptev/test-order-repairman/issues",
+    "license": "https://github.com/vlaslaptev/test-order-repairman/blob/main/LICENSE"
+  },
+  "gallery": [
+    {
+      "file": "media/01-renumber-in-source-order.png",
+      "alt": "Illustrated Java code example: @Order values 3, 1, 2 become 1, 2, 3 in source order.",
+      "sourceFixtures": [
+        "permuted.java",
+        "permuted.after.java"
+      ]
+    },
+    {
+      "file": "media/02-one-class-at-a-time.png",
+      "alt": "Illustrated class boundaries: only the selected class's test methods are renumbered.",
+      "sourceFixtures": [
+        "classScope.java",
+        "classScope.after.java"
+      ]
+    },
+    {
+      "file": "media/03-alt-enter-workflow.png",
+      "alt": "Illustrated guide: place the caret in @Order, press Alt+Enter, choose the renumber intention.",
+      "sourceFixtures": [],
+      "source": "Action wording in TestOrderRepairman.java"
+    },
+    {
+      "file": "media/04-constants-and-imports.png",
+      "alt": "Illustrated Java code example: changed expressions become literals while shared constants and matching expressions remain intact.",
+      "sourceFixtures": [
+        "expressions.java",
+        "expressions.after.java"
+      ]
+    }
+  ],
+  "mediaType": "Original informational illustrations, not runtime IDE screenshots",
+  "mediaDimensions": {
+    "width": 1600,
+    "height": 1000
+  },
+  "icon": {
+    "light": "../../src/main/resources/META-INF/pluginIcon.svg",
+    "dark": "../../src/main/resources/META-INF/pluginIcon_dark.svg",
+    "size": 40,
+    "preview": "media/brand-preview.png",
+    "selectedOption": 3,
+    "motif": "Blue ordered list with a green @ symbol above the downward arrow"
+  },
+  "compatibility": {
+    "sinceBuild": "213.7172.25",
+    "untilBuild": "232.*",
+    "java": 11
+  }
+}
