@@ -96,3 +96,14 @@ updated media. Version 1.2 has been submitted to Marketplace and is awaiting app
 The gallery consists of original informational illustrations derived from repository
 fixtures, not screenshots of a running plugin. Editable sources, upload order,
 copy, and reproduction instructions are in the [Marketplace kit](docs/marketplace/README.md).
+
+## Community and support
+
+Questions, bug reports, and improvement proposals are welcome in
+[GitHub Issues](https://github.com/vlaslaptev/test-order-repairman/issues/new/choose).
+Please use a minimal synthetic example and remove private data before sharing.
+
+- [Contributing guide](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security policy and private vulnerability reporting](SECURITY.md)
+- [Accessibility statement and feedback](ACCESSIBILITY.md)

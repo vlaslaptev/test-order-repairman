@@ -1,0 +1,71 @@
+name: Bug report
+description: Report incorrect behavior or a problem invoking the intention.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues and check the [documented behavior](https://github.com/vlaslaptev/test-order-repairman#usage) first.
+        Report vulnerabilities privately using [SECURITY.md](https://github.com/vlaslaptev/test-order-repairman/blob/main/SECURITY.md).
+        Share synthetic examples and remove secrets, personal data, and private code.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: Find this in the IDE's Plugins settings. For a local build, include the commit if known.
+      placeholder: e.g. 1.2
+    validations:
+      required: true
+  - type: input
+    id: ide-version
+    attributes:
+      label: IntelliJ IDEA version and build
+      description: Copy the version and build from Help > About, without personal details.
+      placeholder: e.g. IntelliJ IDEA 2023.2.5, build IC-232.10227.8
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and JUnit Jupiter version
+      placeholder: e.g. macOS 14, JUnit Jupiter 5.10.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the caret location, how you invoke the action, and whether indexing has finished.
+      placeholder: |
+        1. Open the example class below.
+        2. Place the caret inside ...
+        3. Open the intention menu and ...
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Minimal Java example
+      description: Include imports and relevant annotations. Mark the caret position with a comment. If code is not relevant, explain why.
+      render: java
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe the intended result, including expected annotation values where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Describe what happened, including any missing intention or unexpected edits.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional sanitized error excerpts or screenshots. Include a text description of images.

@@ -1,0 +1,32 @@
+name: Accessibility report
+description: Report a barrier to using the plugin or its documentation.
+title: "[Accessibility]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See our [accessibility statement](https://github.com/vlaslaptev/test-order-repairman/blob/main/ACCESSIBILITY.md).
+        A text description is sufficient. Screenshots and recordings are optional.
+        Do not include private source code, personal information, or medical details.
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Barrier and steps to encounter it
+      description: What were you trying to do, and what prevented or made it difficult to continue?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected experience
+      description: Describe what would make this interaction usable for you, if you can.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant plugin and IDE versions, operating system, assistive technology, keymap, theme, or scaling settings. Share only what is relevant.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional workarounds, sanitized screenshots, or recordings. Include text descriptions of visual evidence.

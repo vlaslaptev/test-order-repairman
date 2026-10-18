@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/vlaslaptev/test-order-repairman/blob/main/SECURITY.md
+    about: Read the security policy for the maintainer's private reporting contact.
+  - name: Usage and compatibility
+    url: https://github.com/vlaslaptev/test-order-repairman#usage
+    about: Read the intention workflow, supported behavior, and IDE compatibility.
+  - name: Code of Conduct concerns
+    url: https://github.com/vlaslaptev/test-order-repairman/blob/main/CODE_OF_CONDUCT.md#enforcement
+    about: Use the private contact in the Code of Conduct to report unacceptable behavior.
